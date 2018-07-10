@@ -1,5 +1,5 @@
 # Motion_Sensor
-This repository contains the files/classes for implementation of an "Alarm" system based on motion detection via a PIR and alarm tune selection via a DIP switch.  The possible tune snippets which can played for the alarm are contained in an alarm tune array.  The control flow is described below:
+This repository contains the files/classes for implementation of an "Alarm" system based on motion detection via a PIR and alarm tune selection via a DIP switch.  The possible tune snippets which can played for the alarm are contained in the Alarms.h file.  Each of the snippets is defined as array of note structures; each structure contains a note frequency and duration.  The processing control flow is described below:
 
   . Upon startup, the processor is put to sleep in POWER_DOWN mode
   
@@ -28,6 +28,9 @@ This repository contains the files/classes for implementation of an "Alarm" syst
   . The processor is put back to sleep and the processing cycle repeats
   
   
+  
   The following files/classes are used to implement the Motion Sensor Alarm processing:
   
   1. MSControl.ino - 
+  
+  2.
